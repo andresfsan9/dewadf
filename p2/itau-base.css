@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+body
+{
+    margin: 0;
+    font-family: Arial, Helvetica, Verdana, Geneva, sans-serif !important;
+    font-size: 12px !important;
+    height: 100%;
+    background-color: #fbfbfb !important;
+    /*background-image: url('../imgs/common/bg_main.gif');*/
+    background-position: 50% 93px !important;
+    background-repeat: no-repeat !important;
+    color: #464646 !important;
+}
+
+.container {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: #464646;
+}
+
+h1{
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+/*h5{
+    font-size: 14px;
+}*/
+
+audio, canvas, img, video {
+    vertical-align: middle;
+}
+
+.valign_helper
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+button, input, select, textarea {
+    color: #222;
+}
+
+button, input, select, textarea {
+    font-family: sans-serif;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+.monto{
+    text-align: right !important;    
+}
+
+/** How to display a generic link */
+a:link {color:#464646;}    /* unvisited link */
+a:visited {color:#464646;} /* visited link */
+a:active {color:#F47C31;}  /* selected link */
+a { color: #464646; text-decoration: underline;
+	webkit-transition: all 200ms linear;
+      -moz-transition: all 200ms linear;
+       -ms-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
+           transition: all 200ms linear;
+}
+a:hover { color: #ec7404; cursor:pointer; }
+a.link-ancora { text-indent: -9999px; }
+
+/* Asi vamos a mostrar los input en general */
+
+input, textarea {
+	color:#a3a3a3;
+	border:1px solid #adadad;
+	font-size:12px;
+	padding:8px 4px;
+	margin:0 0 5px 0;
+    -webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+	-webkit-transition: all 200ms ease-in;
+       -moz-transition: all 200ms ease-in;
+        -ms-transition: all 200ms ease-in;
+         -o-transition: all 200ms ease-in;
+            transition: all 200ms ease-in;
+}
+
+input:focus{
+	border: 1px solid #ec7404;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    outline: 0px;
+    -webkit-box-shadow: rgba(236, 116, 4, 0.8) 0px 0px 5px;
+    box-shadow: rgba(236, 116, 4, 0.8) 0px 0px 5px;
+    color:#464646;
+}
+
+.activo {
+	border: 1px solid #ec7404;
+	-moz-box-shadow: 0 0 5px rgba(236, 116, 4, .8);
+	-webkit-box-shadow: 0 0 5px rgba(236, 116, 4, .8);
+	box-shadow: 0 0 5px rgba(236, 116, 4, .8);
+}
+
+.textleft{
+    text-align: left !important;
+}
+
+.textright{
+    text-align: right;
+}
+.valor_main{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* The idea of this is that we must add to each submit button so that through the jquery.itau.rwb.global.preventdoublesubmission.js plugin you can avoid from the client side the double submit. 
+   (NOT ADD ANY PROPERTY TO THIS CLASS) Actually no need to define this class here, but I do it to have autocomplete .*/
+.rwb_prevent_double_submission{
+
+}
+
+
+/* Los iconitos naranjas para los links y algunos textos */
+ul.rwb_bullet_lista {
+    list-style: none;
+    padding: 10px 20px 10px 10px;
+    margin:0;
+}
+
+ul.rwb_bullet_lista li { 
+    padding: 0 0 5px 0; 
+    line-height: 150%;
+	list-style-image: url('../imgs/common/bullet_li.gif');
+	list-style-position: outside;
+}
+
+/* Posicionamentos e Exibições */
+.left { float: left; }
+.right { float: right; }
+.center { float:}
+.hide { display: none; }
+.block { display: block; }
+
+/* Fatura de cartão */
+.content-fatura-top { width: 520px; }
+.valor-fatura,
+.parcelas-fatura { font-size: 20px; }
+.fatura-sinal { width: 20px; padding-right: 20px; color: #ccc; font-size: 22px; text-align: center; }
+.txt-info-taxa { font-size: 10px; margin-left: 6px; }
+.rwb_sign_extracto {
+    font-size: 25px;
+    font-weight: 700;
+    color: #5c5e66;
+    font-family: "Myriad Pro Bold", "Myriad Pro";
+}
+
+/**
+*** ------------------------------------------
+*** COLUNAS (elementos)
+*** ------------------------------------------
+**/
+
+/* Textos */
+.texto { margin: 0 0 20px 0; }
+.texto-4col { width: 100%; }
+.texto-3col { width: 75%; }
+.texto-2col:last-child img { float: right; }
+
+.row > .texto-2col { float: left; margin: 0; }
+.row > .texto-3col { float: left; margin: 0; }
+
+div.col8 .texto-2col { width: 275px; width: 255px\9; *width: 255px; margin-right: 32px; }
+div.col8 .texto-2col:last-child { margin-right: 0; }
+div.col9 .texto-2col { width: 320px; width: 300px\9; *width: 300px; margin-right: 32px; }
+div.col9 .texto-2col:last-child { margin-right: 0; width: 316px; }
+div.col12 .texto-2col { width: 440px; width: 420px\9; *width: 420px; margin-right: 32px; }
+div.col12 .texto-2col:last-child { margin-right: 0; }
+div.col12 .texto-3col { width: 280px; width: 270px\9; *width: 270px; margin-right: 32px; }
+div.col12 .texto-3col:last-child { margin-right: 0; }
+
+.texto h3 { font-size: 14px; }
+
+p.disclaimer,
+ul.disclaimer { font-size: 11px; margin-bottom: 20px; }
+
+/**
+*** ------------------------------------------
+*** Paginação
+*** ------------------------------------------
+**/
+
+ul.paginacao { display: inline-block; *display: inline; margin: 20px 0; padding-left: 0; 
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  
+}
+ul.paginacao > li { display: inline; text-transform: lowercase; background: none; padding-left: 0; }
+ul.paginacao > li > a,
+ul.paginacao > li > span { float: left; padding: 2px 10px; line-height: 20px; text-decoration: none; background-color: #ffffff; border: 1px solid #dddddd; border-left-width: 0; font-size: 11px; }
+
+ul.paginacao > li > a:hover { background-color: #efefef; color: #ec7404; cursor: pointer; }
+ul.paginacao > li.ativo > a,
+ul.paginacao > li.ativo > span { background-color: #efefef; color: #ec7404; cursor: default; }
+
+ul.paginacao > li.desabilitado > span,
+ul.paginacao > li.desabilitado > a,
+ul.paginacao > li.desabilitado > a:hover { color: #d1d1d1; cursor: default; background-color: transparent; }
+
+ul.paginacao > li:first-child > a,
+ul.paginacao > li:first-child > span { border-left-width: 1px;
+  -webkit-border-bottom-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+          border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-topleft: 3px;
+  
+}
+
+ul.paginacao > li:last-child > a,
+ul.paginacao > li:last-child > span {
+  -webkit-border-top-right-radius: 3px;
+          border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  
+}
+
+/**
+*** ------------------------------------------
+*** Popover
+*** ------------------------------------------
+**/
+.popover { position: absolute; top: 0; left: 0; z-index: 1010; display: none; width: 236px; padding: 1px; white-space: normal; background-color: #ffffff;
+  border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+.popover.top { margin-top: -10px; }
+.popover.right { margin-left: 10px; }
+.popover.bottom { margin-top: 10px; }
+.popover.left { margin-left: -10px; }
+.popover-title { padding: 8px 14px; margin: 0; font-size: 12px; font-weight: bold; line-height: 18px; background-color: #f7f7f7; border-bottom: 1px solid #ebebeb;
+  -webkit-border-radius: 5px 5px 0 0;
+     -moz-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
+}
+.popover-content { padding: 9px 14px; }
+
+.popover-content p,
+.popover-content ul,
+.popover-content ol { margin-bottom: 0; }
+
+.popover .arrow,
+.popover .arrow:after { position: absolute; display: inline-block; width: 0; height: 0; border-color: transparent; border-style: solid; }
+
+.popover .arrow:after { z-index: -1; content: ""; }
+.popover.top .arrow { bottom: -10px; left: 50%; margin-left: -10px; border-top-color: #ffffff; border-width: 10px 10px 0; }
+.popover.top .arrow:after { bottom: -1px; left: -11px; border-top-color: rgba(0, 0, 0, 0.25); border-width: 11px 11px 0; }
+.popover.right .arrow { top: 50%; left: -10px; margin-top: -10px; border-right-color: #ffffff; border-width: 10px 10px 10px 0; }
+.popover.right .arrow:after { bottom: -11px; left: -1px; border-right-color: rgba(0, 0, 0, 0.25); border-width: 11px 11px 11px 0; }
+.popover.bottom .arrow { top: -10px; left: 50%; margin-left: -10px; border-bottom-color: #ffffff; border-width: 0 10px 10px; }
+.popover.bottom .arrow:after { top: -1px; left: -11px; border-bottom-color: rgba(0, 0, 0, 0.25); border-width: 0 11px 11px; }
+.popover.left .arrow { top: 50%; right: -10px; margin-top: -10px; border-left-color: #ffffff; border-width: 10px 0 10px 10px; }
+.popover.left .arrow:after { right: -1px; bottom: -11px; border-left-color: rgba(0, 0, 0, 0.25); border-width: 11px 0 11px 11px; }
+
+.list-sfs-holder{
+    display: inline-block;
+    width: 100%;
+}
+
+.rwb_color_green {
+    color: #52a079!important;
+}
+
+.rwb_subtitulos_extracto {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0px;
+    font-weight: bold;
+    color: #464646;
+}
+
+.readonly {
+    background: none repeat scroll 0% 0% #F2F2F2;
+}

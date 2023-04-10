@@ -1,0 +1,105 @@
+
+/* Redesing Security Panel HB */
+.rwb_captcha_image_rdhb img{
+    height: 75px;
+}
+
+.form-group-md .teclado .contenedor_botones .numeros {
+  /*margin: 23px 4px 4px 25px;*/
+  width: 60px;
+  height: 28px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(91, 81, 73, 0.2);
+}
+
+.form-group-md .teclado .contenedor_botones .numeros:nth-child(1) {
+  /*margin: 23px 4px 4px 25px !important;*/  
+}
+
+.form-group-md .teclado .contenedor_botones .numeros
+ {
+    margin: 0px 4px 8px 4px;
+    padding: 14px 0px 0px 0px;
+}
+
+.form-group-md .teclado .contenedor_botones .numeros:last-child
+ {
+  margin-top: 23px 4px 4px 0px;  
+}
+
+.form-group-md .teclado .contenedor_botones .teclado_borrar {
+  width: 60px;
+  height: 88px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(91, 81, 73, 0.2);
+  border: solid 1px #efe9e5;
+  background: #FFFFFF url(../../../imgs/common/widgets/icon_back.png) no-repeat center center;
+  margin-top: -50px;
+  
+}
+
+.form-group-md .teclado .contenedor_botones {
+    width: 407px;
+    height: 92px;
+    border-radius: 4px;
+    background-color: #faf7f5;
+    float: right;
+    padding: 23px 25px;
+    margin-top: -60px;
+}
+
+.form-group-md label {
+  width: 217px;
+  height: 20px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #605751;
+}
+
+.form-group-md .form-control, .form-group-md input[type=number] {
+    border-radius: 0 !important;
+    border: 0 !important;
+    border-bottom: 2px solid #CCC !important;
+}
+
+#rwb_security_panel_rdhb
+{
+    float: left; 
+    margin-top: 30px;
+    width: 100%;
+}
+
+#InputValuePIN
+{
+    width: 217px; 
+    height: 24px; 
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #969290;
+    background: #FFFFFF url(../../../imgs/common/widgets/secure_icon.png) no-repeat left center;
+    text-align: center;
+    box-shadow: none;
+}
+
+/*agregamos para la animacion del teclado en el login */
+.numeros_over:hover {
+    box-shadow: 0px 2px 6px 0px rgba(91,81,73,0.4) !important;
+    color: #312D2B !important;
+}
+
+.numeros_click {
+    box-shadow: 0px 0px 0px 0px rgba(91, 81, 73, 0.4) !important;
+    background-color: #FAF7F5 !important;
+    color: #312D2B !important;
+}

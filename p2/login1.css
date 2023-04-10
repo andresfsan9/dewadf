@@ -1,0 +1,942 @@
+input:focus {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.iconSvg {
+    display: none;
+}
+.pin-icon-custom{
+    display: none;
+}
+.content_codigo{
+    position:absolute;
+}
+.content_input_codigo{
+   padding-bottom: 15px;
+}
+
+.buttons{
+    float:right;
+}
+
+/* Para 320px */
+@media only screen and (max-width: 330px) and (min-width: 5px) {
+   
+    
+    .buttons{
+        float:none !important;
+    }
+    header {
+        height: 1px;
+    }
+
+    .loginDesktop {
+        display: none;
+    }
+
+    .phoneContent {
+        display: block;
+    }
+
+    .rwb_box_info {
+        width: 100%;
+        min-height: 8%;
+        z-index: 1500;
+        position: fixed;
+        background-color: #781b8e;
+        font-size: 12px;
+        margin-left: -10px;
+        top: 0;
+        border-radius: 0;
+    }
+
+        .rwb_box_info .contenido {
+            position: relative;
+            float: left;
+            margin: 40px 60px;
+            border: 0 !important;
+        }
+
+        .rwb_box_info span.icono {
+            display: none;
+        }
+
+    .validation-summary-errors ul li {
+        list-style: none;
+        line-height: 1.3;
+        margin: 0;
+    }
+
+    .validation-summary-errors {
+        color: #fff;
+        /*font-size: 35px;*/
+        font-size: 42px;
+        padding-right: 55px;
+    }
+
+
+    header .wrap {
+        display: none;
+    }
+
+    .loginResponsive {
+        background: #f38b1f;
+        width: 71rem;
+        height: 150px;
+    }
+
+    .backMobile {
+        float: left;
+    }
+
+        .backMobile img {
+            width: 80px;
+            margin: 35px 0px 0px 0px;
+        }
+
+    .np {
+        padding-top: 0px;
+    }
+
+    .responsive-content {
+        height: 170px;
+        width: 1135px;
+        background: #EEE;
+    }
+
+    .responsive-content h2 {
+        font-size: 65px;
+        margin: 0px 0px 0px 50px;
+        padding: 50px 0px 0px 0px;
+        font-weight: 700;
+    }
+
+    .text-content {
+        height: 100px;
+        width: 1135px;
+    }
+
+        .text-content h2 {
+            font-size: 45px;
+            font-weight: 700;
+            margin: 0px 0px 0px 50px;
+            padding: 30px 0px 0px 0px;
+        }
+    /* Estilos de la caja de numeros */
+    .rwb_login_input {
+        width: 900px !important;
+        position: absolute !important;
+        background: #fff !important;
+        height: 140px !important;
+        border: none !important;
+        border-bottom: 5px solid #CCC !important;
+        top: 0px !important;
+        left: 150px !important;
+        font-size: 5rem !important;
+    }
+
+    #rwb_login_tecladoBox {
+        width: 1060px !important;
+        height: 950px !important;
+        margin-top: -20.5rem !important;
+        /*background-color: white !important;*/
+    }
+
+    .iconSvg {
+        width: 20%;
+        position: absolute;
+        top: 70px;
+        left: 30px;
+    }
+
+    .contenedor_botones {
+        position: absolute;
+        top: 15.5rem;
+        left: 25%;
+    }
+
+
+
+    ul.contenedor_botones li {
+        float: right !important;
+        padding: 5rem;
+        font-size: 4rem !important;
+        background-size: contain !important;
+        background: #fff !important;
+    }
+
+        ul.contenedor_botones li.numeros {
+            margin: 20px !important;
+            border-radius: 20px;
+        }
+
+        ul.contenedor_botones li.numeros {
+            width: 115px !important;
+        }
+
+        ul.contenedor_botones li:nth-last-child(2) {
+            margin: 10px 20.8rem 0px 0px !important;
+        }
+
+        /*RDHB*/
+        .form-group-md .teclado .contenedor_botones .numeros {
+            padding: 5rem !important;
+        }
+
+        ul.contenedor_botones li.teclado_borrar {
+            width: 269px !important;
+            font-size: 3rem !important;
+            height: 180px !important;
+            margin: 14.5px -36.4rem 0px 0px !important;
+            background: #fff !important;
+            background-image: url(../img/back.png) !important;
+            background-repeat: no-repeat !important;
+            background-position-x: center !important;
+            background-position-y: center !important;
+            color: #ffffff !important;
+            background-size: 45% !important;
+            border-radius: 20px !important;
+        }
+
+    ul.contenedor_botones {
+        width: 945px !important;
+        margin-left: -10px;
+    }
+
+    /*RDHB*/
+    .form-group-md .teclado .contenedor_botones {
+        padding: 18px 25px !important;
+        margin-top: 0px !important;
+    }
+
+    #titleBox {
+        display: none !important;
+    }
+
+    .iconSvg {
+        display: block;
+    }
+
+    #rwb_login_Siguiente {
+        padding: 4rem 25rem;
+        font-size: 4rem;
+        background: #ec7000 !important;
+        margin-top: 50px;
+        border-radius: 10px;
+        text-shadow: none;
+    }
+
+    #rwb_login_preguntasF {
+        font-size: 3rem;
+        color: #4787ed;
+        font-weight: 700;
+    }
+
+    #rwb_login_Salir {
+        display: none;
+    }
+
+    .textMobile {
+        text-align: center;
+        margin-top: 70px;
+        width: auto;
+        float: none;
+    }
+
+    /** solo para pruebas */
+    .rwb_pin_container {
+        background: #fff;
+        margin-top: 530px;
+    }
+
+    /*RDHB*/
+    #rwb_login_Siguiente {
+        width: auto;
+    }
+
+    .button-container {
+        width: auto;
+    }
+
+    /*#InputValuePIN {
+        width: auto !important;
+        height: 122px !important;
+    }*/
+}
+
+@media only screen and (max-width: 375px) and (min-width: 331px) {
+   
+    .buttons{
+        float:none !important;
+    }
+
+    header {
+        height: 1px;
+    }
+
+    .loginDesktop {
+        display: none;
+    }
+
+    .phoneContent {
+        display: block;
+    }
+    .fix-left-mobile-col{
+      padding-left: 10px;
+    }
+
+    .rwb_box_info {
+        width: 100%;
+        min-height: 8%;
+        z-index: 1500;
+        position: fixed;
+        background-color: #781b8e;
+        font-size: 12px;
+        margin-left: -10px;
+        top: 0;
+        border-radius: 0;
+    }
+
+        .rwb_box_info .contenido {
+            position: relative;
+            float: left;
+            margin: 40px 60px;
+            border: 0 !important;
+        }
+
+        .rwb_box_info span.icono {
+            display: none;
+        }
+
+    .validation-summary-errors ul li {
+        list-style: none;
+        line-height: 1.3;
+        margin: 0;
+    }
+
+    .validation-summary-errors {
+        color: #fff;
+        /*font-size: 35px;*/
+        font-size: 42px;
+        padding-right: 55px;
+    }
+
+    header .wrap {
+        display: none;
+    }
+
+    .loginResponsive {
+        background: #f38b1f;
+        width: 71rem;
+        height: 150px;
+    }
+
+    .backMobile {
+        float: left;
+    }
+
+        .backMobile img {
+            width: 80px;
+            margin: 35px 0px 0px 0px;
+        }
+
+    .np {
+        padding-top: 0px;
+    }
+
+    .responsive-content {
+        height: 170px;
+        width: 1135px;
+        background: #EEE;
+    }
+
+        .responsive-content h2 {
+            font-size: 65px;
+            margin: 0px 0px 0px 50px;
+            padding: 50px 0px 0px 0px;
+            font-weight: 700;
+        }
+
+    .text-content {
+        height: 100px;
+        width: 1135px;
+    }
+
+        .text-content h2 {
+            font-size: 45px;
+            /*font-weight: 700;*/
+            font-weight: 500;
+            margin: 0px 0px 0px 50px;
+            padding: 30px 0px 0px 0px;
+        }
+    /* Estilos de la caja de numeros */
+    .rwb_login_input {
+        width: 900px !important;
+        position: absolute !important;
+        background: #fff !important;
+        height: 140px !important;
+        border: none;
+        border-bottom: 5px solid #CCC !important;
+        top: 0px !important;
+        left: 150px !important;
+        font-size: 5rem !important;
+    }
+
+    #rwb_login_tecladoBox {
+        width: 1060px !important;
+        height: 950px !important;
+        margin-top: -20.5rem !important;
+        /*background-color: white !important;*/
+    }
+
+    .iconSvg {
+        width: 20%;
+        position: absolute;
+        top: 70px;
+        left: 30px;
+    }
+
+    .contenedor_botones {
+        /*position: absolute;
+        position:relative;
+        top: 15.5rem;
+        left: 25%;*/
+    }
+
+
+
+    ul.contenedor_botones li {
+        float: right !important;
+        padding: 5rem;
+        font-size: 4rem !important;
+        background-size: contain;
+        background: #fff;
+    }
+
+        ul.contenedor_botones li.numeros {
+            margin: 20px !important;
+            /*border-radius: 20px;*/
+            border-radius: 38px !important;
+            box-shadow: 3px 5px 14px 4px #dedcda !important;
+        }
+
+        ul.contenedor_botones li.numeros {
+            /*width: 115px !important;*/
+            width: 128px !important;
+        }
+
+        ul.contenedor_botones li:nth-last-child(2) {
+            /*margin: 10px 20.5rem 0px 0px !important;*/
+            margin: 10px 42.5rem 0px 0px !important;
+        }
+
+        /*RDHB*/
+        .form-group-md .teclado .contenedor_botones .numeros {
+            padding: 5rem !important;
+        }
+
+        ul.contenedor_botones li.teclado_borrar {
+            /*/font-size: 3rem !important;*/
+            font-size: 1rem !important;
+            height: 180px !important;
+            background: #fff !important;
+            background-image: url(../img/back.png) !important;
+            background-repeat: no-repeat !important;
+            background-position-x: center !important;
+            background-position-y: center !important;
+            color: #ffffff !important;
+            /*background-size: 45% !important;
+            border-radius: 20px !important;*/
+            /*width: 269px !important;*/
+            width: 616px !important;
+            /*margin: 14.5px -36.4rem 0px 0px !important;*/
+            margin: 12.5px -59.4rem 8px 34px !important;
+            background-size: 18% !important;
+            border-radius: 38px !important;
+            filter: grayscale(1);
+            box-shadow: 3px 5px 14px 4px #dedcda;
+
+        }
+
+    ul.contenedor_botones {
+        /*width: 945 !important*/
+        width: 985px !important;
+        margin-left: 10px;
+    }
+
+    /*RDHB*/
+    .form-group-md .teclado .contenedor_botones {
+        padding: 18px 25px !important;
+        margin-top: 0px !important;
+    }
+
+    #titleBox {
+        display: none !important;
+    }
+
+    .iconSvg {
+        display: none !important;
+        position: absolute;
+        z-index: 9;
+        top: 30px;
+    }
+
+    #rwb_login_Siguiente {
+        padding: 5rem 27rem;
+        font-size: 3rem;
+        letter-spacing:2px;
+        line-height: 10px;
+        width: 100% !important;
+        font-weight: normal;
+        background: #ec7000 !important;
+        margin-top: 50px;
+        border-radius: 10px;
+        text-shadow: none;
+    }
+
+    #rwb_login_preguntasF {
+        font-size: 3rem;
+        //color: #4787ed;
+        font-weight: 700;
+        color: #106be0;
+    }
+
+    #rwb_login_Salir {
+        display: none;
+    }
+
+    .textMobile {
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: auto;
+        float: none;
+    }
+
+    /** solo para pruebas */
+    .rwb_pin_container {
+        background: #fff;
+        margin-top: 530px;
+    }
+
+    /*RDHB*/
+    #rwb_login_Siguiente {
+        width: auto;
+    }
+
+    .button-container {
+        width: auto;
+        border-top:none !important;
+    }
+
+    #InputValuePIN {
+       /* width: auto !important;
+        height: 122px !important;*/
+       width:1040px !important;
+       left:34px !important;
+       background:#fff !important;
+       border-bottom: 5px solid #ec7000 !important;
+       border-color: #ec7000 !important;
+    }
+    .pin-icon-custom{
+        display:block;
+        position: absolute;
+        top: 22px;
+        font-size: 84px;
+        z-index: 10;
+        color: #ec7000;
+    }
+
+    /*Captcha fix mobile*/
+    .captchaMobile{
+       display:block;
+       margin-left: 0 !important;
+    }
+    .rwb_captcha_title{
+        font-weight: normal !important;
+        font-size: 45px !important;
+    }
+    .content_codigo{
+        position:relative !important;
+    }
+    .content_codigo .rwb_captcha_title{
+        width: 1000px !important;
+    }
+    .content_codigo #InputValueCAPTCHA{
+        padding-top:25%;
+        padding-bottom:30%;
+        width: 1024px;
+    }
+    .content_codigo #InputValueCAPTCHA .rwb_dynamic_panel_content.rwb_captcha_image{
+        zoom: 3;
+    }
+    .content_codigo #InputValueCAPTCHA .rwb_refresh_captcha{
+        text-indent: 0;
+        background: none;
+        float:right !important;
+        text-transform: lowercase;
+        font-size: 42px;
+        border: 3px solid #106eb0;
+        margin-top:25px;
+        width: auto;
+        height: auto;
+        padding: 40px 60px;
+        border-radius: 10px;
+        text-decoration: none;
+        line-height: 18px;
+        color: #106eb0;
+        font-weight: bold;
+    }
+
+    .content_input_codigo{
+        padding-top:30%;
+        padding-bottom:0!important;
+        margin-left:0 !important;
+    }
+    .content_input_codigo #InputValueCAPTCHA{
+        border: none !important;
+        border-bottom: 3px solid #89837f !important;
+        background: none !important;
+        z-index: 900 !important;
+        width: 1020px;
+        font-size: 60px;
+        padding: 20px 10px;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 376px) {
+    
+    .buttons{
+        float:none !important;
+    }
+    header {
+        height: 1px;
+    }
+
+    .loginDesktop {
+        display: none;
+    }
+
+    .phoneContent {
+        display: block;
+    }
+
+    .fix-left-mobile-col{
+      padding-left: 10px;
+    }
+
+    .rwb_box_info {
+        width: 100%;
+        min-height: 8%;
+        z-index: 1500;
+        position: fixed;
+        background-color: #781b8e;
+        font-size: 12px;
+        margin-left: -10px;
+        top: 0;
+        border-radius: 0;
+    }
+
+        .rwb_box_info .contenido {
+            position: relative;
+            float: left;
+            margin: 40px 60px;
+            border: 0 !important;
+        }
+
+        .rwb_box_info span.icono {
+            display: none;
+        }
+
+    .validation-summary-errors ul li {
+        list-style: none;
+        line-height: 1.3;
+        margin: 0;
+    }
+
+    .validation-summary-errors {
+        color: #fff;
+        font-size: 42px;
+        padding-right: 55px;
+    }
+
+    header .wrap {
+        display: none;
+    }
+
+    .loginResponsive {
+        background: #f38b1f;
+        width: 71rem;
+        height: 150px;
+    }
+
+    .backMobile {
+        float: left;
+    }
+
+        .backMobile img {
+            width: 80px;
+            margin: 35px 0px 0px 0px;
+        }
+
+    .np {
+        padding-top: 0px;
+    }
+
+    .responsive-content {
+        height: 170px;
+        width: 1135px;
+        background: #EEE;
+    }
+
+        .responsive-content h2 {
+            font-size: 65px;
+            margin: 0px 0px 0px 50px;
+            padding: 50px 0px 0px 0px;
+            font-weight: 700;
+        }
+
+    .text-content {
+        height: 100px;
+        width: 1135px;
+    }
+
+        .text-content h2 {
+            font-size: 45px;
+            /*font-weight: 700;*/
+            font-weight: 500;            
+            margin: 0px 0px 0px 50px;
+            padding: 30px 0px 0px 0px;
+        }
+    /* Estilos de la caja de numeros */
+    .rwb_login_input {
+        width: 900px !important;
+        position: absolute !important;
+        background: #fff !important;
+        height: 140px !important;
+        border: none !important;
+        border-bottom: 5px solid #CCC !important;
+        top: 0px !important;
+        left: 150px !important;
+        font-size: 5rem !important;
+    }
+
+    #rwb_login_tecladoBox {
+        width: 1060px !important;
+        height: 950px !important;
+        margin-top: -20.5rem !important;
+        /*background-color: white !important;*/
+    }
+
+    .iconSvg {
+        display:none !important;
+        width: 20%;
+        position: absolute;
+        top: 70px;
+        left: 30px;
+    }
+
+    .contenedor_botones {
+       /* position: absolute !important;
+        top: 15.5rem !important;
+        left: 25% !important;
+        height: 920px !important;*/
+    }
+
+    ul.contenedor_botones li {
+        float: right;
+        padding: 5rem;
+        font-size: 4rem !important;
+        background-size: contain !important;
+        background: #fff !important;
+    }
+
+        ul.contenedor_botones li.numeros {
+            margin: 20px !important;
+            /*border-radius: 20px;*/
+            border-radius: 38px !important;
+            box-shadow: 3px 5px 14px 4px #dedcda !important;
+        }
+
+        ul.contenedor_botones li.numeros {
+            /*width: 115px !important;*/
+            width: 128px !important;
+        }
+
+        ul.contenedor_botones li:nth-last-child(2) {
+            /*margin: 10px 20.5rem 0px 0px !important;*/
+            margin: 10px 42.5rem 0px 0px !important;
+        }
+        
+        /*RDHB*/
+        .form-group-md .teclado .contenedor_botones .numeros {
+            padding: 5rem !important;
+        }
+
+        ul.contenedor_botones li.teclado_borrar {
+            /*font-size: 3rem !important;*/
+            font-size: 1rem !important;
+            height: 180px !important;
+            background: #fff;
+            background-image: url(../img/back.png) !important;
+            background-repeat: no-repeat !important;
+            background-position-x: center !important;
+            background-position-y: center !important;
+            color: #ffffff !important;
+            /*background-size: 45% !important;
+            border-radius: 20px !important;*/
+            /*width: 269px !important;*/
+            width: 616px !important;
+            /*margin: 14.5px -36.4rem 0px 0px !important;*/
+            margin: 12.5px -59.4rem 8px 34px !important;
+            background-size: 18% !important;
+            border-radius: 38px !important;
+            filter: grayscale(1);
+            box-shadow: 3px 5px 14px 4px #dedcda;
+        }
+
+    ul.contenedor_botones {
+        /*width: 945 !important*/
+        width: 985px !important;
+        margin-left: 10px;
+    }
+
+    /*RDHB*/
+    .form-group-md .teclado .contenedor_botones {
+        padding: 18px 25px !important;
+        margin-top: 0px !important;
+    }
+
+    #titleBox {
+        display: none !important;
+    }
+
+    .iconSvg {
+        display: block;
+    }
+
+    #rwb_login_Siguiente {
+        /*padding: 4rem 25rem;
+        font-size: 4rem;*/
+        padding: 5rem 27rem;
+        letter-spacing: 2px;
+        font-size: 3rem;
+        line-height: 10px;
+        width: 100% !important;
+        font-weight: normal;
+        background: #ec7000 !important;
+        margin-top: 50px;
+        border-radius: 10px;
+        text-shadow: none;
+    }
+
+    #rwb_login_preguntasF {
+        font-size: 3rem;
+        //color: #4787ed;
+        font-weight: 700;
+        color: #106eb0;
+    }
+
+    #rwb_login_Salir {
+        display: none;
+    }
+
+    .textMobile {
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: auto;
+        float: none;
+    }
+
+    /** solo para pruebas */
+    .rwb_pin_container {
+        background: #fff;
+        margin-top: 530px;
+    }
+
+
+    /*RDHB*/
+    #rwb_login_Siguiente {
+        width: auto;
+    }
+
+    .button-container {
+        width: auto;
+    }
+
+    #InputValuePIN {
+       /* width: auto !important;
+        height: 122px !important;*/
+       width:1040px !important;
+       left:34px !important;
+       background:#fff !important;
+       border-bottom: 5px solid #ec7000 !important;
+       border-color: #ec7000 !important;
+    }
+    .pin-icon-custom{
+        display:block;
+        position: absolute;
+        top: 22px;
+        font-size: 84px;
+        z-index: 10;
+        color: #ec7000;
+    }
+        /*Captcha fix mobile*/
+    .captchaMobile{
+       display:block;
+       margin-left: 0 !important;
+    }
+    .rwb_captcha_title{
+        font-weight: normal !important;
+        font-size: 45px !important;
+    }
+    .content_codigo{
+        position:relative !important;
+    }
+    .content_codigo .rwb_captcha_title{
+        width: 1000px !important;
+    }
+    .content_codigo #InputValueCAPTCHA{
+        padding-top:25%;
+        padding-bottom:30%;
+        width: 1024px;
+    }
+    .content_codigo #InputValueCAPTCHA .rwb_dynamic_panel_content.rwb_captcha_image{
+        zoom: 3;
+    }
+    .content_codigo #InputValueCAPTCHA .rwb_refresh_captcha{
+        text-indent: 0;
+        background: none;
+        float:right !important;
+        text-transform: lowercase;
+        font-size: 42px;
+        border: 3px solid #106eb0;
+        margin-top:25px;
+        width: auto;
+        height: auto;
+        padding: 40px 60px;
+        border-radius: 10px;
+        text-decoration: none;
+        line-height: 18px;
+        color: #106eb0;
+        font-weight: bold;
+    }
+
+    .content_input_codigo{
+        padding-top:30%;
+        padding-bottom:0!important;
+        margin-left:0 !important;
+    }
+    .content_input_codigo #InputValueCAPTCHA{
+        border: none !important;
+        border-bottom: 3px solid #89837f !important;
+        background: none !important;
+        z-index: 900 !important;
+        width: 1020px;
+        font-size: 60px;
+        padding: 20px 10px;
+    }
+}

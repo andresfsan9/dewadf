@@ -1,0 +1,158 @@
+ul.contenedor_botones {
+	margin: 0;
+	padding: 1px 0px 0px 0px;
+	width: 122px;
+	height: 78px;
+}
+
+ul.contenedor_botones li{
+	float: left;
+	list-style: none;
+	cursor: pointer;
+	padding: 3px 0 0 0;
+	margin: 0px 0px 1px 1px;
+	text-align: center;
+	color: #666;
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	height: 26px; 
+	background: url('../../../imgs/common/widgets/widget_pin_transaccion/boton-off.png') no-repeat;	
+}
+
+ul.contenedor_botones li.numeros{
+	width: 29px;
+}
+
+ul.contenedor_botones li.teclado_borrar{
+	width: 59px;
+	color: #666;
+	padding: 3px 0 0 0;
+	font-size: 12px;
+	background: url('../../../imgs/common/widgets/widget_pin_transaccion/boton-borrar-off.png') no-repeat;
+}
+
+ul.contenedor_botones li.when_numeros_over{
+	background: url('../../../imgs/common/widgets/widget_pin_transaccion//boton-on.png') no-repeat;	
+	color: #333	;
+}
+
+ul.contenedor_botones li.when_borrar_over {
+	background: url('../../../imgs/common/widgets/widget_pin_transaccion//boton-borrar-on.png') no-repeat;
+	color: #333;	
+}
+
+.teclado_pin{
+    margin: 5px 0px 16px;
+    width: 120px;
+    height: 126px;
+}
+
+.box_pin_inner{
+    margin: 16px 35px 10px 46px;
+}
+
+.box_pin_confirmacion .icon{
+    background-image: url('../../../imgs/common/widgets/widget_pin_transaccion/icono-seguridad.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 22px;
+    height: 25px;
+    position: absolute;
+    top: -8px;
+    left: 20px;
+}
+
+.rwb_input_value_pin{
+    width: 110px;
+    
+}
+
+.box_pin_confirmacion{
+    position: relative;
+    margin-top: 20px;
+}
+
+.box_pin_main_title{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+.rwb_secure_transaccion{
+    float: right;
+    width: 222px;
+    background-image: url('../../../imgs/common/widgets/widget_pin_transaccion/bg_pinbox.jpg');
+    background-repeat: repeat-x;
+
+}
+
+/*-- Login - Componente de Seguridad --*/
+.rwb_pin_container{
+    border-top: 1px solid #BBB;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    background: url('../../../imgs/common/widgets/widget_pin_transaccion/bgContainer_1.jpg') repeat-x 0 1px;
+}
+
+.rwb_login_secure_transaccion{    
+    background-repeat: repeat-x;
+    width: 338px !important;
+}
+
+#titleBox{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+    line-height: 1.2;
+}
+
+#rwb_login_tecladoBox{
+    background-color: #EEE !important;
+    padding: 5px;
+    height: 90px;
+    margin-top:5px;
+}
+
+#rwb_login_Siguiente{    
+    color: #FFF !important;
+    background: url('../../../imgs/common/widgets/widget_pin_transaccion/bgBtn3.png') repeat-x left center;
+    text-shadow: -1px -1px 0 #b25900;
+    border: 1px solid #B25900;
+    font-weight: bolder;
+    padding: 3px 10px;
+    margin-right: 3px;
+    line-height: 20px;
+    cursor:pointer;
+}
+
+#rwb_login_Salir{
+    border: 1px solid #AAA;
+    color: #333 !important;
+    background: url('../../../imgs/common/widgets/widget_pin_transaccion/bgBtn2.png') repeat-x left center;
+    text-shadow: -1px -1px 0px white;
+    font-weight: bolder;
+    padding: 3px 10px;
+    line-height: 20px;
+    cursor:pointer;
+}
+
+.rwb_login_input{
+    width: 124px;
+    padding: 3px 6px;    
+    line-height: 20px;
+    height: 20px;
+    border: 1px solid #BBB;
+    cursor: not-allowed;
+    background-color: #EEEEEE;
+}
+
+#rwb_login_ayuda{   
+    list-style-image: url("../../../imgs/common/bullet_li.gif");
+    margin-left:20px;
+}

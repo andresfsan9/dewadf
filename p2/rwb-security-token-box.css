@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+
+
+.rwb_box_token {
+    position: relative;
+    margin-top: 30px;
+}
+
+
+
+.rwb_token_title{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.rwb_box_token .icon {
+    background-image: url('../../../imgs/common/widgets/widget_security_checks/icon_token.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 22px;
+    height: 25px;
+    position: absolute;
+    top: -5px;
+    left: 20px;
+}
+
+.rwb_box_token_label{
+    margin: 10px 0 4px 0;
+    font-size:12px;
+}
